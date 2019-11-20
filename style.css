@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+}
+
+nav ul li a {
+  font-size: 1.5em;
+  color: white;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+.main-content {
+  height: 85vh;
+  width: auto;
+  background-image: url(images/brick-wall.jpg);
+}
+
+.left-panel,
+.mid-panel,
+.right-panel {
+  height: 60vh;
+  border: 1px solid black;
+  transform: translate(0, 25%);
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#logo {
+  max-height: 15vh;
+  width: auto;
+}

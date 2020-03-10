@@ -21,6 +21,7 @@ nav a:hover {
 .mid-panel,
 .right-panel {
   height: 60vh;
+  position: relative;
   border: 1px solid black;
   transform: translate(0, 25%);
 }
@@ -28,10 +29,21 @@ nav a:hover {
 .item-1,
 .item-2,
 .item-3 {
+  margin: 15px;
+}
+
+.panel-description {
+  color: white;
+
+}
+
+.panel-link {
+
+}
+
+.panel-link-div {
   position: absolute;
-  margin: auto;
-  top: 50%;
-  transform: translate(0, -50%);
+  bottom: 30px;
 }
 
 #logo {

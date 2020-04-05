@@ -1,7 +1,17 @@
+/*
+  Bootstrap Dark Background Color:
+  #343a40
+*/
+
 * {
   margin: 0;
   font-family: 'Barlow', sans-serif;
   scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+  height: 100%;
 }
 
 nav ul li a {
@@ -9,24 +19,39 @@ nav ul li a {
   color: white;
 }
 
+nav {
+  background-color: #242424;
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  transition: 1s;
+}
+
 nav a:hover {
-  color: gray;
+  color: #BBB;
 }
 
 .main-content {
-  height: 85vh;
+  height: 100vh;
   width: auto;
   background-image: url(images/brick-wall.jpg);
 }
 
-.left-panel,
-.mid-panel,
-.right-panel {
+.home-panel {
   height: 60vh;
   position: relative;
   border: 1px solid black;
   transform: translate(0, 25%);
   display: grid;
+  background-color: #242424;
 }
 
 .item-1,
@@ -43,6 +68,7 @@ nav a:hover {
   align-self: end;
   color: white;
   padding: 10px 20px;
+  transition: background-color 0.5s;
 }
 
 .panel-link:hover{
@@ -56,11 +82,20 @@ nav a:hover {
 }
 
 .item-title {
-  
+  font-size: 3em;
+  padding: 30px 20px;
 }
 
-.description-txt {
+.description-text {
+  height: 50vh;
+  font-size: 20px;
+  position: relative;
+  transform: translate(0, 30%);
+  line-height: 1.5;
+}
 
+.item-image {
+  float: left;
 }
 
 #first-item-description-div {

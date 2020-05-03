@@ -19,7 +19,7 @@
       Chorus
     </a>
 
-    <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
       <span class="fa fa-bars" id="hamburger-icon"></span>
     </button>
 
@@ -46,7 +46,7 @@
       <div class="container-fluid">
         <div class="row">
 
-          <div class="panel col-md-4 offset-md-1 col-6 offset-3 my-md-0 my-3">
+          <div class="panel col-md-4 offset-md-1 col-sm-10 offset-sm-1 col-12 my-md-0 my-3">
             <h2 class="text-center text-white">Item 1</h2>
             <p class="text-white">
               Here is a short description of the first item.
@@ -54,14 +54,12 @@
               section of this page down below.
             </p>
             <div class="text-center">
-              <button name="button" class="btn btn-outline-light" href="#first-section">
-                First Section
-              </button>
+              <a href="#first-section" class="section-link btn-outline-light btn">First Section</a>
             </div>
 
           </div>
 
-          <div class="panel col-md-4 offset-md-2 col-6 offset-3 my-md-0 my-3">
+          <div class="panel col-md-4 offset-md-2 col-sm-10 offset-sm-1 col-12 my-md-0 my-3">
             <h2 class="text-center text-white">Item 2</h2>
             <p class="text-white">
               Here is a short description of the first item.
@@ -69,9 +67,7 @@
               section of this page down below.
             </p>
             <div class="text-center">
-              <button name="button" class="btn btn-outline-light" href="#first-section">
-                Second Section
-              </button>
+              <a href="#second-section" class="section-link btn-outline-light btn">Second Section</a>
             </div>
           </div>
         </div>
@@ -84,7 +80,7 @@
   <!-- Start First Section -->
   <div class="first-section container-fluid" id="first-section">
     <div class="row">
-      <div class="col">
+      <div class="col-10 col-md-12">
         <h2 class="text-white display-4 item-title">Item 1</h2>
       </div>
     </div>
@@ -105,14 +101,14 @@
       </div>
 
       <div class="col-md-4 offset-md-1">
-        <img src="images/item-1.png" class="item-image mx-auto d-block" alt="Scenery">
+        <img src="images/item-1.png" class="item-image img-fluid mx-auto d-block" alt="Scenery">
       </div>
     </div>
   </div>
   <!-- End First Section -->
 
   <!-- Start Second Section -->
-  <div class="second-section container-fluid" id="section-section">
+  <div class="second-section container-fluid" id="second-section">
     <div class="row">
       <div class="col">
         <h2 class="text-white display-4 item-title">Item 2</h2>
@@ -120,11 +116,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-4 offset-md-0">
-        <img src="images/item-2.png" class="item-image mx-auto d-block" alt="Scenery">
-      </div>
-
-      <div class="col-md-7 offset-md-1">
+      <div class="col-md-7 col-push-7">
         <p class="text-white item-description my-md-0 my-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Sed semper libero vitae elit hendrerit, nec gravida quam
@@ -135,6 +127,11 @@
           mauris eget sapien porttitor dapibus.
         </p>
       </div>
+
+      <div class="col-md-4 offset-md-1 col-pull-4">
+        <img src="images/item-2.png" class="item-image img-fluid mx-auto d-block" alt="Scenery">
+      </div>
+
     </div>
   </div>
   <!-- End Second Section -->

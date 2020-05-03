@@ -1,136 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    <title>Test Website</title>
-    <link href="style.css" type="text/css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  </head>
-  <body>
-    <header class="sticky-top">
+<html lang="en" dir="ltr">
 
-        <nav class="nav navbar navbar-expand-sm" id="nav">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chorus - Home</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title></title>
+</head>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<body>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <a href="#" class="navbar-brand" id="title">
+      <i class="fa fa-cloud"></i>
+      Chorus
+    </a>
 
-          <div class="logo navbar-brand">
-            <img id="logo" class ="img-fluid" src="images/logo.jpg" alt="Company Logo">
-          </div>
+    <button type="button" name="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+      <span class="fa fa-bars" id="hamburger-icon"></span>
+    </button>
 
-          <h1 id="company-name" class="text-white">Example Title</h1>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
 
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="menu-items navbar-nav ml-auto">
-              <li id="home" class="navbar-item">
-                <a href="#main-content" class="home-btn nav-link">Home</a>
-              </li>
-              <li id="products" class="navbar-item">
-                <a href="#" class="products-btn nav-link">Products</a>
-              </li>
-              <li id="about" class="navbar-item">
-                <a href="#" class="about-btn nav-link">About</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Products</a>
+        </li>
 
-    </header>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="main-content">
+  <!-- Start Home Page -->
+  <div class="home-page">
+    <div class="home-page-inner">
       <div class="container-fluid">
         <div class="row">
 
-          <div class="edge-empty-div col-md-1 col"></div>
-
-          <div class="home-panel col-md-2 col-sm-3 rounded-lg">
-            <h3 class="item-1 text-white text-center">Item 1</h3>
-            <p class="panel-description">
+          <div class="panel col-md-4 offset-md-1 col-6 offset-3 my-md-0 my-3">
+            <h2 class="text-center text-white">Item 1</h2>
+            <p class="text-white">
               Here is a short description of the first item.
               Clicking the link below will take you to another
               section of this page down below.
             </p>
-            <div class="panel-link-div">
-              <a href="#first-item-description-div" class="panel-link rounded-lg font-weight-light border border-light">First Section</a>
+            <div class="text-center">
+              <button name="button" class="btn btn-outline-light" href="#first-section">
+                First Section
+              </button>
             </div>
 
           </div>
 
-          <div class="mid-empty-div col-md-2 col"></div>
-
-          <div class="home-panel col-md-2 col-sm-3 rounded-lg">
-            <h3 class="item-2 text-white text-center">Item 2</h3>
-            <p class="panel-description">
-              Here is a short description of the second item.
+          <div class="panel col-md-4 offset-md-2 col-6 offset-3 my-md-0 my-3">
+            <h2 class="text-center text-white">Item 2</h2>
+            <p class="text-white">
+              Here is a short description of the first item.
               Clicking the link below will take you to another
               section of this page down below.
             </p>
-            <div class="panel-link-div">
-              <a href="#" class="panel-link rounded font-weight-light border border-light">Second Section</a>
+            <div class="text-center">
+              <button name="button" class="btn btn-outline-light" href="#first-section">
+                Second Section
+              </button>
             </div>
-
           </div>
 
-          <div class="mid-empty-div col-md-2 col"></div>
-
-          <div class="home-panel col-md-2 col-sm-3 rounded-lg">
-            <h3 class="item-3 text-white text-center">Item 3</h3>
-            <p class="panel-description">
-              Here is a short description of the third item.
-              Clicking the link below will take you to another
-              section of this page down below.
-            </p>
-            <div class="panel-link-div">
-              <a href="#" class="panel-link rounded-lg font-weight-light border border-light">Third Section</a>
-            </div>
-
-          </div>
-
-          <div class="edge-empty-div col-md-1 col"></div>
+          <div class="col-md-1"></div>
 
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="first-item-description-div">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <h2 class="item-title text-white">Item 1</h2>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-1">
+  <!-- End Home Page -->
 
-          </div>
-          <div class="col-md-5">
-            <p class="description-text text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed semper libero vitae elit hendrerit, nec gravida quam
-              imperdiet. In pretium odio at fermentum semper. Class
-              aptent taciti sociosqu ad litora torquent per conubia
-              nostra, per inceptos himenaeos. Nam nec bibendum orci, sed
-              tristique turpis. Suspendisse potenti. Praesent hendrerit
-              mauris eget sapien porttitor dapibus. Aliquam urna nisi,
-              eleifend nec malesuada quis, fringilla eu arcu.
-            </p>
-          </div>
-          <div class="col-md-2"></div>
-          <div class="col-md-4 item-image ">
-            <img src="images/item-1.jpg" class="mx-auto d-block img-fluid rounded" alt="Item 1">
-          </div>
+  <!-- Start First Section -->
+  <div class="first-section container-fluid" id="first-section">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-white display-4 item-title">Item 1</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-7">
+        <div class="description-panel">
+          <p class="text-white item-description my-md-0 my-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed semper libero vitae elit hendrerit, nec gravida quam
+            imperdiet. In pretium odio at fermentum semper. Class
+            aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos. Nam nec bibendum orci, sed
+            tristique turpis. Suspendisse potenti. Praesent hendrerit
+            mauris eget sapien porttitor dapibus.
+          </p>
         </div>
       </div>
 
+      <div class="col-md-4 offset-md-1">
+        <img src="images/item-1.png" class="item-image mx-auto d-block" alt="Scenery">
+      </div>
+    </div>
+  </div>
+  <!-- End First Section -->
+
+  <!-- Start Second Section -->
+  <div class="second-section container-fluid" id="section-section">
+    <div class="row">
+      <div class="col">
+        <h2 class="text-white display-4 item-title">Item 2</h2>
+      </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-4 offset-md-0">
+        <img src="images/item-2.png" class="item-image mx-auto d-block" alt="Scenery">
+      </div>
 
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+      <div class="col-md-7 offset-md-1">
+        <p class="text-white item-description my-md-0 my-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed semper libero vitae elit hendrerit, nec gravida quam
+          imperdiet. In pretium odio at fermentum semper. Class
+          aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos. Nam nec bibendum orci, sed
+          tristique turpis. Suspendisse potenti. Praesent hendrerit
+          mauris eget sapien porttitor dapibus.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End Second Section -->
+
+  <!-- Start Footer Section -->
+  <footer>
+    
+  </footer>
+  <!-- End Footer Section -->
+</body>
+
 </html>

@@ -28,6 +28,10 @@ nav ul {
   color: white;
 }
 
+a.nav-link:hover {
+  color: #BBB;
+}
+
 .nav-item {
   margin: 0 10px;
   color: white;
@@ -44,20 +48,11 @@ nav ul {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 767px) {
-  .home-page, .first-section, .second-section {
-    position: relative;
-    width: 100%;
-    min-height: 175vh;
-  }
-}
-
 .home-page-inner {
   background-image: url("images/brick-wall.jpg");
   background-size: cover;
   height: 100%;
   width: 100%;
-  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -101,4 +96,23 @@ nav ul {
   background-size: cover;
   height: 100vh;
   width: auto;
+}
+
+/** Breakpoints **/
+@media screen and (max-width: 767px) {
+  .home-page, .first-section, .second-section {
+    position: relative;
+    width: 100%;
+    min-height: 175vh;
+  }
+
+  .first-section, .second-section {
+    min-height: 175vh;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .first-section, .second-section {
+    min-height: 200vh;
+  }
 }

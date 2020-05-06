@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -98,6 +102,24 @@ a.nav-link:hover {
   width: auto;
 }
 
+footer {
+  background-color: #242424;
+  padding: 1.5rem 0;
+}
+
+footer ul li {
+  padding: .1rem 0;
+}
+
+.icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.icon:hover {
+  color: #BBB;
+}
+
 /** Breakpoints **/
 @media screen and (max-width: 767px) {
   .home-page, .first-section, .second-section {
@@ -105,14 +127,10 @@ a.nav-link:hover {
     width: 100%;
     min-height: 175vh;
   }
-
-  .first-section, .second-section {
-    min-height: 175vh;
-  }
 }
 
 @media screen and (max-width: 479px) {
   .first-section, .second-section {
-    min-height: 200vh;
+    min-height: 225vh;
   }
 }

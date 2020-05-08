@@ -13,7 +13,6 @@ body {
 
 #title {
   font-size: 2rem;
-  color: white;
 }
 
 nav {
@@ -41,20 +40,26 @@ a.nav-link:hover {
   color: white;
 }
 
+.active-btn {
+  text-decoration: underline;
+}
+
 #hamburger-icon {
-  color: white;
   font-size: 2rem;
 }
 
 .home-page {
+  background-image: url("images/brick-wall.jpg");
+  background-size: cover;
+}
+
+.landing-page {
   position: relative;
   width: 100%;
   min-height: 100vh;
 }
 
-.home-page-inner {
-  background-image: url("images/brick-wall.jpg");
-  background-size: cover;
+.landing-page-inner {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -100,6 +105,16 @@ a.nav-link:hover {
   background-size: cover;
   height: 100vh;
   width: auto;
+}
+
+.product-img {
+  max-height: 50vh;
+  object-fit: contain;
+}
+
+.product-page {
+  margin-top: 4rem;
+  height: 100vh;
 }
 
 footer {
